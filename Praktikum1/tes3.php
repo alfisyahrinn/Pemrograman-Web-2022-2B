@@ -14,7 +14,7 @@
   $noRumah = 29;
   $blok = "4c";
   $jumlahPenghuni = 3;
-
+  echo $jalan ,$blok;
   echo "Hasil dari variable jalan + noRumah : ";
   echo "$jalan $noRumah <br>";
   echo "Hasil dari Normah + jumlahPenghuni : ";
