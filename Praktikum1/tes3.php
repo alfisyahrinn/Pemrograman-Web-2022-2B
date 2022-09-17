@@ -19,7 +19,6 @@
   echo "$jalan $noRumah <br>";
   echo "Hasil dari Normah + jumlahPenghuni : ";
   echo "$noRumah, $jumlahPenghuni"
-
   ?>
 </body>
 
