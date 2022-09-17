@@ -1,7 +1,6 @@
 <?php
 $lokasi = "yogyakarta";
 echo $lokasi;
-
 // ini contoh penggunaan komentar 1 baris
 
 /* 
