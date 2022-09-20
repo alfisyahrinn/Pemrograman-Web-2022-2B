@@ -18,7 +18,12 @@
   echo "Hasil dari variable jalan + noRumah : ";
   echo "$jalan $noRumah <br>";
   echo "Hasil dari Normah + jumlahPenghuni : ";
-  echo "$noRumah, $jumlahPenghuni"
+  echo "$noRumah, $jumlahPenghuni";
+  echo "<br>";
+  // echo $hasil = $noRumah + $jumlahPenghuni;
+  echo "<br>";
+  // var_dump($hasil);
+  echo $hasil = $blok + $noRumah;
   ?>
 </body>
 
