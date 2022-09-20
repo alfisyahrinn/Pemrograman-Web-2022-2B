@@ -5,24 +5,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Pemakaian Variable</title>
 </head>
 
 <body>
   <?php
-  $jalan = "medan";
+  $jalan = "Medan - B.aceh";
   $noRumah = 29;
   $blok = "4c";
   $jumlahPenghuni = 3;
-  echo $jalan, $blok;
-  echo "Hasil dari variable jalan + noRumah : ";
-  echo "$jalan $noRumah <br>";
-  echo "Hasil dari Normah + jumlahPenghuni : ";
-  echo "$noRumah, $jumlahPenghuni";
+  echo "hasil varible variable jalan + variable no rumah adalah :";
+  echo $alamat = $jalan . $noRumah;
   echo "<br>";
-  // echo $hasil = $noRumah + $jumlahPenghuni;
+  echo "hasil varible variable noRumah + variable Jumlah penghuni adalah :";
+  echo $hasil = $noRumah +  $jumlahPenghuni;
   echo "<br>";
-  // var_dump($hasil);
+  echo "hasil varible variable blok + variable noRumah adalah :";
   echo $hasil = $blok + $noRumah;
   ?>
 </body>

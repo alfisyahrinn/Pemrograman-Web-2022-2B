@@ -10,16 +10,13 @@
 
 <body>
   <?php
-  date_default_timezone_set('Asia/Jakarta');
   $d = date("D");
-  $date = date("d-M-y H:i:s");
-  if ($d == "Mon") {
-    $d = "Senin";
-    echo "Selamat Belajar <br>";
-  } else {
-    echo "ini hari $d <br>";
-    echo $d . "" . $date;
-  }
+  if ($d == "Sat")
+    echo "Selamat Berakhir pekan <br>";
+  elseif ($d == "Fri") //salah harusnya sholat jumat bukan hari selasa
+    echo "Selamat menunaikan sholat jum'at bagi yang muslim";
+  else
+    echo "selamat belajar"
   ?>
 </body>
 
