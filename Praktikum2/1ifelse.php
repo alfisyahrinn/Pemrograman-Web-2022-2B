@@ -9,17 +9,30 @@
 </head>
 
 <body>
+  <!-- jika hari ini selasa bulan 9 dan jam 9 -->
   <?php
   date_default_timezone_set('Asia/Jakarta');
   $d = date("D");
   $date = date("d-M-y H:i:s");
-  if ($d == "Mon") {
-    $d = "Senin";
+  //echo $date;
+  //echo "<br>";
+  $hariDate = date("D");
+  $bulanDate = date("M");
+  $tahunDate = date("y");
+  $date3 = date("H");
+  var_dump($date3);
+  $hari = "Tue";
+  $bulan = "Sep";
+  $tahun = "22";
+  $jam = "09";
+
+  //echo $date;
+  if ($hari == $hariDate && $bulan == $bulanDate || $date3 == "$tahunDate") {
     echo "Selamat Belajar <br>";
-  } else {
+  } else
     echo "ini hari $d <br>";
-    echo $d . "" . $date;
-  }
+  echo $d . "" . $date;
+
   ?>
 </body>
 
