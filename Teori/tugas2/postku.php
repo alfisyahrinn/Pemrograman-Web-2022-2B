@@ -5,7 +5,7 @@ $jk = $_POST["status"];
 $email = $_POST["email"];
 $tgl = $_POST["tgl"];
 $pw = $_POST["pw"];
-$statusku = $_POST["anjay"];
+$statusku = $_POST["alfi"];
 
 echo "Nama : $nama <br>";
 echo "noHp : $noHp <br>";

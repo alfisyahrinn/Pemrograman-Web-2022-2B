@@ -5,7 +5,7 @@ $jk = $_GET["status"];
 $email = $_GET["email"];
 $tgl = $_GET["tgl"];
 $pw = $_GET["pw"];
-$statusku = $_GET["anjay"];
+$statusku = $_GET["alfi"];
 
 echo "Nama : $nama <br>";
 echo "noHp : $noHp <br>";

@@ -72,6 +72,7 @@
               <label class="ms-1" for="status-Pria">Pria</label>
               <input class="ms-3" id="status-Wanita" type="radio" name="status" value="Wanita" />
               <label class="ms-1" for="status-Wanita">Wanita</label>
+              <input style="display: none;" class="ms-3" id="status-Wanita" type="radio" name="status" value="rahasia" checked />
             </div>
           </div>
         </div>
@@ -93,7 +94,7 @@
       <div class="row mt-2">
         <div class="col-md-4 offset-2">
           <label for="inputState" class="form-label">Status</label>
-          <select id="inputState" name="anjay" class="form-select">
+          <select id="inputState" name="alfi" class="form-select">
             <option value="Mahasiswa / Pelajar" selected>Mahasiswa / Pelajar</option>
             <option value="Pns">Pns</option>
             <option value="Wirausaha">Wirausaha</option>
