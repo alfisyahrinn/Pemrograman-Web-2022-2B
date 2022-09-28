@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  overflow-x: hidden; /* Sembunyikan horizontal scrollbar */
+}
+
+.form-control {
+  border-radius: 10px;
+  border: none;
+  background-color: #fafafa;
+}
+
+option{
+  border-radius: 10px;
+  border: none;
+  background-color: #fafafa;  
+}
+
+.form-label{
+  color: #3C3C3C ;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.formku{
+  margin-top: 30px;
+}
+
+/* navbar */
+.navbar-brand{
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #1F1F1F;
+}
+/* end navbar */
+
+/* Hero */
+.hero{
+  margin-top: 60px;
+}
+h1{
+  width: 100%;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 63px;
+  color: #000000;
+}
+/* End Hero */
