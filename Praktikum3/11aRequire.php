@@ -1,6 +1,7 @@
-<?php 
+<?php
 
 $a = "saya sedang belajar php";
-function tulisanTebal($teks){
+function tulisanTebal($teks)
+{
   echo "<b>$teks<b>";
 }
