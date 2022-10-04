@@ -6,6 +6,7 @@ $email = $_GET["email"];
 $tgl = $_GET["tgl"];
 $pw = $_GET["pw"];
 $statusku = $_GET["alfi"];
+$acc = $_GET["acc"];
 
 echo "Nama : $nama <br>";
 echo "noHp : $noHp <br>";
@@ -14,3 +15,4 @@ echo "email : $email <br>";
 echo "tanggal lahir : $tgl <br>";
 echo "password : $pw <br>";
 echo "status : $statusku <br>";
+echo "acc : $acc <br>";

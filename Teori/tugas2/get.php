@@ -106,7 +106,8 @@
 
       <div class="row col-8 offset-2 mt-3">
         <label class="d-flex">
-          <input class="me-2" type="checkbox" name="acc">
+          <input class="me-2" type="checkbox" name="acc" value="
+          apakah menerima persyaratan">
           apakah menerima persyaratan
         </label>
       </div>
