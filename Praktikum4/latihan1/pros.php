@@ -7,17 +7,24 @@ $PassUser = $_POST["password"];
 
 $panjangUser = strlen($UserUser);
 $panjangPass = strlen($PassUser);
-if ($UserUser == "") {
+if ($UserUser == "" && $PassUser == "") {
   echo "
   <script>
-  alert('Isilah Bang Username jangan kosong');
+  alert('Username dan Password kosong');
+  document.location='index.php';
+  </script>
+  ";
+} else if ($UserUser == "") {
+  echo "
+  <script>
+  alert('Username tidak boleh kosong');
   document.location='index.php';
   </script>
   ";
 } else if ($PassUser == "") {
   echo "
   <script>
-  alert('Isilah Bang Password jangan kosong');
+  alert('Password tidak boleh kosong');
   document.location='index.php';
   </script>
   ";
