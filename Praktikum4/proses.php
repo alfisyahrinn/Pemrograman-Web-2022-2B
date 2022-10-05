@@ -23,7 +23,8 @@ echo "tel : " . $_GET["tel"] . "<br>";
 echo "text : " . $_GET["text"] . "<br>";
 echo "time : " . $_GET["time"] . "<br>";
 echo "url : " . $_GET["url"] . "<br>";
-echo "week : " . $_GET["text"] . "<br>";
+echo "week : " . $_GET["week"] . "<br>";
+echo "select : " . $_GET["select"] . "<br>";
 
 
 

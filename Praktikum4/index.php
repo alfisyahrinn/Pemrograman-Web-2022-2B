@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -144,12 +146,26 @@
             <input type="week" name="week">
           </label>
         </li>
+        <li>
+          <label for="inputState" class="form-label">Status</label>
+          <select id="inputState" name="select" class="form-select">
+            <option value="Mahasiswa / Pelajar" selected>Mahasiswa / Pelajar</option>
+            <option value="Pns">Pns</option>
+            <option value="Wirausaha">Wirausaha</option>
+            <option value="guru">Guru</option>
+            <option value="Presiden">Presiden</option>
+          </select>
+        </li>
       </ul>
       <button type="submit" name="kirim">kirim</button>
       <input type="reset" value="reset">
     </form>
-    
+
   </div>
+
+  <!-- End Form -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 
 </html>
