@@ -1,0 +1,9 @@
+<?php
+$koneksi = mysqli_connect("localhost", "root", "", "meden") or die("Koneksi Gagal");
+
+$hasil = mysqli_query($koneksi, "SELECT * FROM liga");
+while ($row = mysqli_fetch_array($hasil)) {
+  echo "Liga " . $row["1"];
+  echo "Mempunyai " . $row["2"];
+  echo "Wakil Liga Champion <br>";
+}
