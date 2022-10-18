@@ -2,8 +2,6 @@
 //menagil inputan
 $keyword = $_POST["keyword"];
 $cari = $_POST["cari"];
-echo $keyword . "<br>";
-echo $cari;
 //koneksi ke database
 $koneksi = mysqli_connect("localhost", "root", "", "meden") or die("Koneksi Gagal");
 //cari data

@@ -1,3 +1,45 @@
+<?php
+if (isset($_POST["register"])) {
+  require "koneksi.php";
+  $username = $_POST["username"];
+  $password = $_POST["password"];
+
+  //encryp
+  $passwordEncrypt = md5($password);
+  //cek apakah ada username yang sama
+  $queryCek = mysqli_query($koneksi, "SELECT username FROM user WHERE username = '$username'");
+  $tes = mysqli_fetch_assoc($queryCek);
+
+  if ($tes) {
+    echo "
+    <script>
+    alert('Username telah di gunakan');
+    document.location='FormRegister.php';
+    </script>
+    ";
+  } else {
+    $query = mysqli_query($koneksi, "INSERT INTO user VALUES
+    ('$username', '$passwordEncrypt');");
+    if ($query) {
+      echo "
+            <script>
+            alert('Data Berhahsil di tambahkan')
+            document.location='FormRegister.php';
+            </script>
+            ";
+    } else {
+      echo "
+            <script>
+            alert('Gagal menambahkan data')
+            document.location='FormRegister.php';
+            </script>
+            ";
+    }
+  }
+}
+
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -6,7 +48,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Form Buku Tamu</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style copy.css">
 </head>
 
 <body>
@@ -43,8 +85,8 @@
   <div class="container hero">
     <div class="row">
       <div class="col-12 offset-2">
-        <h1>Buku tamu Database <br>
-          Mysql Mantap👍</h1>
+        <h1>Register Your Account <br>
+          CFC Mantap👍</h1>
       </div>
     </div>
   </div>
@@ -52,30 +94,19 @@
 
   <!-- Form -->
   <div class="container formku">
-    <form action="3b_addForm.php" method="post">
+    <form action="" method="post">
       <div class="row">
         <div class="col-md-4 offset-2">
-          <label for="nama" class="form-label">Nama</label>
-          <input type="text" name="nama" class="form-control" id="nama" maxlength="50">
+          <label for="Username" class="form-label">Username</label>
+          <input type="text" name="username" class="form-control" id="Username" maxlength="50" required>
         </div>
         <div class="col-md-4">
-          <label for="email" class="form-label">Email</label>
-          <input type="email" name="email" class="form-control" id="email" maxlength="35">
-        </div>
-        <div class="col-md-8 offset-2 mt-1">
-          <label for="komentar" class="form-label">Komentar</label>
-          <textarea class="p-3" name="komentar" id="komentar" cols="89" rows="4"></textarea>
-          <style>
-            textarea {
-              border: none;
-              background-color: #fafafa;
-              border-radius: 10px;
-            }
-          </style>
+          <label for="password" class="form-label">password</label>
+          <input type="password" name="password" class="form-control" id="password" maxlength="35" required>
         </div>
       </div>
 
-      <button class="btn btn-primary offset-2 mt-3" type="submit" name="simpan">simpan</button>
+      <button class="btn btn-success offset-2 mt-3" type="submit" name="register">register</button>
       <input type="reset" value="Reset" class="btn btn-warning mt-3 mx-2">
 
     </form>
