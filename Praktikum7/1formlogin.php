@@ -20,6 +20,12 @@ if (!empty($_SESSION["username2b"])) {
 
 <body>
   <style>
+    a {
+      list-style: none;
+      text-decoration: none;
+      list-style-type: none;
+    }
+
     .ini {
       display: flex;
       height: 100vh;
@@ -53,14 +59,15 @@ if (!empty($_SESSION["username2b"])) {
         </li>
         <li>
           <!-- <input type="submit" value="login"> -->
-          <button type="submit" name="kirim">Login</button>
+          <button class="btn-login" type="submit" name="kirim">Login</button>
+          <button style="border: 1px solid #000;" class="mt-2 btn-register bg-light text-dark"><a class="text-dark" href="FormRegister.php">Register</a></button>
         </li>
       </ul>
     </form>
   </div>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -106,8 +106,8 @@ if (isset($_POST["register"])) {
         </div>
       </div>
 
-      <button class="btn btn-success offset-2 mt-3" type="submit" name="register">register</button>
-      <input type="reset" value="Reset" class="btn btn-warning mt-3 mx-2">
+      <button class="btn btn-primary offset-2 mt-3" type="submit" name="register">register</button>
+      <a class="btn btn-success mt-3" href="1formlogin.php">Login</a>
 
     </form>
   </div>
