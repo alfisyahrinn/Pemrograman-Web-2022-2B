@@ -9,7 +9,6 @@ if (isset($_POST["kirim"])) {
   $password = md5($pw);
 
 
-
   $koneksi = mysqli_connect("localhost", "root", "", "meden") or die("Koneksi Gagal");
 
   $hasil = mysqli_query($koneksi, "SELECT * FROM user WHERE username = '$username'");

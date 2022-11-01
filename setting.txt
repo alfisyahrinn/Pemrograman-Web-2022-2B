@@ -1,0 +1,45 @@
+{
+    "editor.wordWrap": "on",
+    "code-runner.runInTerminal": true,
+    "code-runner.saveAllFilesBeforeRun": true,
+    "code-runner.saveFileBeforeRun": true,
+    "workbench.editorAssociations": {
+      "*.xml": "default"
+    },
+    "liveServer.settings.donotShowInfoMsg": true,
+    "prettier.printWidth": 240,
+    "prettier.singleQuote": true,
+    "editor.formatOnSave": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "[dart]": {
+      "editor.formatOnSave": true,
+      "editor.formatOnType": true,
+      "editor.rulers": [80],
+      "editor.selectionHighlight": false,
+      "editor.suggest.snippetsPreventQuickSuggestions": false,
+      "editor.suggestSelection": "first",
+      "editor.tabCompletion": "onlySnippets",
+      "editor.wordBasedSuggestions": false
+    },
+    "dart.debugExternalPackageLibraries": true,
+    "bracketPairColorizer.depreciation-notice": false,
+    "php.validate.executablePath": "",
+    "explorer.openEditors.visible": 0,
+    "editor.fontFamily": "'Hack', 'Fira Code'",
+    "editor.fontLigatures": true,
+    "editor.lineHeight": 35,
+    "editor.codeLensFontFamily": "'Cascadia Code'",
+    "window.zoomLevel": 1,
+    "editor.minimap.enabled": false,
+    "editor.tabSize": 2,
+    "terminal.integrated.gpuAcceleration": "off",
+    "git.autofetch": true,
+    "git.enableSmartCommit": true,
+    "editor.fontSize": 18,
+    "workbench.colorTheme": "Tokyo Night Storm",
+    "editor.cursorBlinking": "expand",
+    "editor.renderWhitespace": "all"
+  }
+  
