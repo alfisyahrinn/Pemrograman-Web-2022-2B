@@ -14,7 +14,7 @@
         </a>
       </li>
       <li>
-        <a href="orders.php?url=orders" class="nav-link <?php echo (isset($_GET["url"]) && $_GET["url"] == "orders") ? 'active' : 'link-dark'; ?>">
+        <a href="index.php?url=orders" class="nav-link <?php echo (isset($_GET["url"]) && $_GET["url"] == "orders") ? 'active' : 'link-dark'; ?>">
           <svg class="bi pe-none me-2" width="16" height="16">
             <use xlink:href="#table" />
           </svg>
@@ -22,7 +22,7 @@
         </a>
       </li>
       <li>
-        <a href="product.php?url=product" class="nav-link <?php echo (isset($_GET["url"]) && $_GET["url"] == "product") ? 'active' : 'link-dark'; ?>">
+        <a href="index.php?url=product" class="nav-link <?php echo (isset($_GET["url"]) && $_GET["url"] == "product") ? 'active' : 'link-dark'; ?>">
           <svg class="bi pe-none me-2" width="16" height="16">
             <use xlink:href="#grid" />
           </svg>
@@ -30,11 +30,19 @@
         </a>
       </li>
       <li>
-        <a href="customer.php?url=customer" class="nav-link <?php echo (isset($_GET["url"]) && $_GET["url"] == "customer") ? 'active' : 'link-dark'; ?>">
+        <a href="index.php?url=customer" class="nav-link <?php echo (isset($_GET["url"]) && $_GET["url"] == "customer") ? 'active' : 'link-dark'; ?>">
           <svg class="bi pe-none me-2" width="16" height="16">
             <use xlink:href="#people-circle" />
           </svg>
           Customers
+        </a>
+      </li>
+      <li>
+        <a href="index.php?url=report" class="nav-link <?php echo (isset($_GET["url"]) && $_GET["url"] == "report") ? 'active' : 'link-dark'; ?>">
+          <svg class="bi pe-none me-2" width="16" height="16">
+            <use xlink:href="#people-circle" />
+          </svg>
+          report
         </a>
       </li>
     </ul>

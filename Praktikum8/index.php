@@ -57,7 +57,7 @@
     <!-- content -->
     <?php
     if (isset($_GET["url"]) && $_GET["url"] == "index") {
-      include 'index.php';
+      include 'home.php';
     } elseif (isset($_GET["url"]) && $_GET["url"] == "customer") {
       include 'customer.php';
     } elseif (isset($_GET["url"]) && $_GET["url"] == "orders") {
