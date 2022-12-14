@@ -28,6 +28,9 @@ if (isset($_GET["halaman"]) && $_GET["halaman"] == "home") {
 } elseif (isset($_GET["halaman"]) && $_GET["halaman"] == "menu") {
   $page = "menu.php";
   include 'main.php';
+} elseif (isset($_GET["halaman"]) && $_GET["halaman"] == "katmenu") {
+  $page = "katmenu.php";
+  include 'main.php';
 } elseif (isset($_GET["halaman"]) && $_GET["halaman"] == "login") {
   include 'login.php';
 } else {

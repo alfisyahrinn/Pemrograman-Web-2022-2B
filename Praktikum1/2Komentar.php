@@ -8,4 +8,3 @@ echo $lokasi;
   mau berapa baris juga
   asal di dalam tanda komentarnya
 */
-
